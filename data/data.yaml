@@ -1,0 +1,13 @@
+names:
+- appel
+- banana
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: banana-apple
+  url: https://universe.roboflow.com/transportasi-h7ccf/banana-apple/dataset/1
+  version: 1
+  workspace: transportasi-h7ccf
+test: /content/banana-apple-1/test/images
+train: /content/banana-apple-1/train/images
+val: /content/banana-apple-1/valid/images
