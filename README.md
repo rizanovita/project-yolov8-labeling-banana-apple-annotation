@@ -209,19 +209,28 @@ Optimizer stripped from runs/detect/train/weights/best.pt, 6.2MB
 --
 
 ##🔍 Analisis
-Masalah Kritis:
 
--Presisi Sangat Rendah (0.034): 96.6% deteksi adalah false positive
+-Presisi Tinggi (0.884 rata-rata):
 
--Kelas Motor Gagal: Presisi nyaris nol (0.00068) dengan recall hanya 25%
+Model jarang melakukan false positive (hanya ~11.6% deteksi salah)
 
--Data Minim: Hanya 9 gambar validasi (total 41 instances)
+Khusus pisang sangat akurat (P=0.95)
 
-Hasil Positif:
+-Recall Cukup Baik (0.794 rata-rata):
 
--Kelas Transjakarta cukup baik (Recall=0.824)
+Model bisa mendeteksi ~79.4% objek yang ada
 
--Kecepatan inferensi cepat (2.1ms/gambar di Tesla T4)
+Masih ada ~20.6% false negative (objek terlewat)
+
+-mAP50 Sangat Baik (0.891):
+
+Akurasi deteksi tinggi pada IoU threshold 50%
+
+-mAP50-95 Sedang (0.653):
+
+Kinerja turun saat threshold IoU lebih ketat
+
+Khusus pisang lebih rendah (0.571), mungkin karena variasi bentuk/pose
 
 
 ## Confusion matrix
