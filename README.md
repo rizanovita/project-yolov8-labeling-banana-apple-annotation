@@ -26,7 +26,7 @@ yolov8-labeling-project/
 
 ├── README.md # Dokumentasi proyek
 
-├── [📄 Lihat file best(2).pt](./data/best(2).pt) # Model hasil training
+├── [📄 Lihat file best(2).pt](./data/best.pt) # Model hasil training
 
 ├── [📄 Lihat file results.md](./data/results.md)  # Catatan hasil training/inference
 
